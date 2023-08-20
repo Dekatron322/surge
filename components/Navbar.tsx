@@ -10,6 +10,7 @@ import { SiDiscord } from "react-icons/si";
 const styles = {
   navLinks:
     "cursor-pointer ml-10 capitalize flex hover:text-primary-blue items-center text-sm ease-in-out duration-500",
+  fixedHeader: "fixed top-0 left-0 right-0",
 };
 
 const Navbar = () => {
@@ -17,13 +18,13 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   return (
     <header
-      className="w-full absolute z-10"
+      className={`w-full  z-10 ${styles.fixedHeader}`}
       style={{
         backgroundColor: "#1C0F1F",
         borderBottom: "1px solid rgba(243, 243, 243, 0.2)",
       }}
     >
-      <nav className="max-w-[1440px] mx-auto h-24 shadow-xl  ">
+      <nav className="max-w-[1440px] mx-auto h-24 shadow-xl">
         <div className="flex justify-between items-center h-full sm:px-16 px-6 w-full">
           <Link href="/" className="flex justify-center items-center">
             <Image

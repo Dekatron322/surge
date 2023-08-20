@@ -4,7 +4,7 @@ import { MdForward } from "react-icons/md";
 
 const Terms = () => {
   const [activeSection, setActiveSection] = useState("terms");
-  const [hoveredSection, setHoveredSection] = useState(null);
+  const [hoveredSection, setHoveredSection] = useState<string | null>(null); // Declare the type of hoveredSection
   const handleScroll = () => {
     // Add your scroll handling logic here
   };

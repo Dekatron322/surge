@@ -13,14 +13,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "TheSurge",
     images:
-      "https://github.com/GreenInkLimited/PurplePagesWeb/blob/main/src/assets/homepage.png?raw=true",
+      "https://github.com/Dekatron322/surge/blob/main/public/og.png?raw=true",
     description:
       "TheSurge.tech is a pioneering force dedicated solely to empowering tech startups across Africa. Our mission is to revolutionize the tech startup ecosystem, providing comprehensive support and resources to fuel innovation, accelerate growth, and drive unprecedented success.",
   },
   openGraph: {
     title: "TheSurge",
     images:
-      "https://github.com/GreenInkLimited/PurplePagesWeb/blob/main/src/assets/homepage.png?raw=true",
+      "https://github.com/Dekatron322/surge/blob/main/public/og.png?raw=true",
     description:
       "TheSurge.tech is a pioneering force dedicated solely to empowering tech startups across Africa. Our mission is to revolutionize the tech startup ecosystem, providing comprehensive support and resources to fuel innovation, accelerate growth, and drive unprecedented success.",
   },

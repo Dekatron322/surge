@@ -1,16 +1,34 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import { CustomButton } from "..";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutContent = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className=" mt-10 ">
       <div className="max-w-[1300px] mx-auto justify-between flex xl:flex-row flex-col gap-x-20 px-6 relative z-0">
         <div>
-          <h2 className="text-black-100 xl:text-5xl md:text-5xl text-[32px] font-black">
+          <h2
+            className="text-black-100 xl:text-5xl md:text-5xl text-[32px] font-black"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="250"
+          >
             What We Do
           </h2>
-          <p className="xl:pt-10 pt-4 text-lg text-black-100">
+          <p
+            className="xl:pt-10 pt-4 text-lg text-black-100"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="300"
+          >
             Most SMEs cannot afford the cost of comprehensive marketing to
             increase brand awareness, audience, and sales due to the rising cost
             of doing business. Building and maintaining a website to assist with
@@ -19,18 +37,36 @@ const AboutContent = () => {
             to conducting business in the modern day.
           </p>
 
-          <p className="xl:pt-10 pt-4 text-lg text-black-100">
+          <p
+            className="xl:pt-10 pt-4 text-lg text-black-100"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="400"
+          >
             In order to provide comprehensive digital marketing solutions to
             SMEs for the aim of simply and artistically interacting with a
             larger audience, ultimately for business growth, the Purple Pages
             concept was established with a creative, problem-solving objective.
           </p>
 
-          <p className="xl:pt-10 pt-4 text-lg text-black-100">
+          <p
+            className="xl:pt-10 pt-4 text-lg text-black-100"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             Purple Pages is, to put it simply, a one-stop shop for SMEs' digital
             marketing needs.
           </p>
-          <p className="xl:pt-10 pt-4 pb-4 text-lg text-black-100">
+          <p
+            className="xl:pt-10 pt-4 pb-4 text-lg text-black-100"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="600"
+          >
             Most SMEs cannot afford the cost of comprehensive marketing to
             increase brand awareness, audience, and sales due to the rising cost
             of doing business. Building and maintaining a website to assist with
@@ -45,6 +81,10 @@ const AboutContent = () => {
           src="/AboutProperty.jpg"
           alt="hero"
           className="object-contain rounded-xl opacity-70"
+          data-aos="fade-left"
+          data-aos-once="true"
+          data-aos-duration="1500"
+          data-aos-delay="500"
         />
       </div>
       <div>
@@ -52,10 +92,22 @@ const AboutContent = () => {
           className="max-w-[1300px] mx-auto flex xl:flex-col flex-col justify-center relative z-0 mt-16"
           style={{ borderTop: "1px solid rgba(243, 243, 243, 0.2)" }}
         >
-          <h2 className="text-black-100 xl:text-5xl md:text-5xl text-[32px] font-black text-center mt-6">
+          <h2
+            className="text-black-100 xl:text-5xl md:text-5xl text-[32px] font-black text-center mt-6"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="250"
+          >
             Invest with the best
           </h2>
-          <p className="pt-4 text-lg text-black-100 text-center ">
+          <p
+            className="pt-4 text-lg text-black-100 text-center"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             Republic curates private investing opportunities with high-growth
             potential <br /> across startups, gaming, real estate, and crypto.
           </p>
@@ -187,7 +239,13 @@ const AboutContent = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex flex-col max-w-[1300px] mx-auto bg-[#422f45] rounded-2xl h-[400px] items-center overflow-hidden">
+        <div
+          className="relative flex flex-col max-w-[1300px] mx-auto bg-[#422f45] rounded-2xl h-[400px] items-center overflow-hidden"
+          data-aos="fade-down"
+          data-aos-once="true"
+          data-aos-duration="1500"
+          data-aos-delay="250"
+        >
           <div className="relative">
             <h2 className="text-black-100 xl:text-5xl md:text-5xl text-3xl xl:text-center md:text-center px-6 font-black xl:mt-20 md:mt-20 mt-10">
               Subscribe To Our Newsletter
@@ -207,7 +265,13 @@ const AboutContent = () => {
             </div>
           </div>
         </div>
-        <div className="flex max-w-[800px] pt-10 items-center mx-auto flex-col">
+        <div
+          className="flex max-w-[800px] pt-10 items-center mx-auto flex-col"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1500"
+          data-aos-delay="500"
+        >
           <h2 className="text-black-100 text-xl xl:text-3xl md:text-3xl px-6 text-center">
             The best venture capital firms, family offices, and high net worth
             individuals already invest in Republic companies.
@@ -248,10 +312,22 @@ const AboutContent = () => {
           style={{ borderTop: "1px solid rgba(243, 243, 243, 0.2)" }}
         >
           <div className="flex max-w-[800px] pt-10 items-center mx-auto flex-col">
-            <h2 className="text-black-100 md:text-3xl text-2xl font-extrabold px-6 text-center">
+            <h2
+              className="text-black-100 md:text-3xl text-2xl font-extrabold px-6 text-center"
+              data-aos="fade-down"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               Built by a diverse team with deep expertise in private investing
             </h2>
-            <p className="text-black-100 px-6  mt-2 text-center">
+            <p
+              className="text-black-100 px-6  mt-2 text-center"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               Republic was founded by alumni from AngelList, the largest online
               platform for private investing. Since then, we have built a team
               and a network of the top people from the startup, venture capital,
@@ -259,7 +335,13 @@ const AboutContent = () => {
             </p>
           </div>
           <div className="pt-10 flex xl:flex-row md:flex-row flex-col gap-5 xl:justify-between md:justify-between justify-center items-center max-w-[1200px] mx-auto mb-20">
-            <div className="flex flex-col justify-center items-center max-w-[250px]">
+            <div
+              className="flex flex-col justify-center items-center max-w-[250px]"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="250"
+            >
               <Image
                 src="/team1.jpg"
                 alt="logo"
@@ -274,7 +356,13 @@ const AboutContent = () => {
                 Co-founder of Checky, a health startup.
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center max-w-[250px]">
+            <div
+              className="flex flex-col justify-center items-center max-w-[250px]"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               <Image
                 src="/team0.jpg"
                 alt="logo"
@@ -289,7 +377,13 @@ const AboutContent = () => {
                 Co-founder of Checky, a health startup.
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center max-w-[250px]">
+            <div
+              className="flex flex-col justify-center items-center max-w-[250px]"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="750"
+            >
               <Image
                 src="/team2.jpg"
                 alt="logo"
@@ -304,7 +398,13 @@ const AboutContent = () => {
                 Co-founder of Checky, a health startup.
               </p>
             </div>
-            <div className="flex flex-col justify-center items-center max-w-[250px]">
+            <div
+              className="flex flex-col justify-center items-center max-w-[250px]"
+              data-aos="fade-right"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="1000"
+            >
               <Image
                 src="/team3.jpg"
                 alt="logo"

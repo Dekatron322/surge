@@ -82,7 +82,7 @@ const Investors = () => {
           <div
             className="bg-[#422f45] rounded-md p-6"
             style={{ flex: 1, height: "100%" }}
-            data-aos="fade-up"
+            data-aos="fade-left"
             data-aos-once="true"
             data-aos-duration="1500"
             data-aos-delay="750"

@@ -1,13 +1,19 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import CustomButton from "../CustomButton";
 import { FiSearch } from "react-icons/fi";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const AboutHeader = () => {
   const handleScroll = () => {
     // Add your scroll handling logic here
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   return (
     <header className="about flex-col justify-center self-center items-center">
@@ -22,10 +28,22 @@ const AboutHeader = () => {
             layout="responsive"
           />
           <div className="image-text xl:text-center">
-            <h1 className="xl:text-5xl md:text-5xl text-3xl font-extrabold text-black-100  pb-2">
+            <h1
+              className="xl:text-5xl md:text-5xl text-3xl font-extrabold text-black-100 pb-2"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="250"
+            >
               The future of private investing
             </h1>
-            <p className="text-black-100 pb-2">
+            <p
+              className="text-black-100 pb-2"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1500"
+              data-aos-delay="500"
+            >
               Surge is the private investing platform for investors seeking high
               growth potential.
             </p>

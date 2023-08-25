@@ -65,10 +65,10 @@ const Navbar = () => {
           >
             <div className="flex w-full items-center justify-between">
               <Image
-                src="/2.png"
+                src="/surgetech.png"
                 alt="logo"
-                width={118}
-                height={18}
+                width={130}
+                height={20}
                 className="object-contain"
                 onClick={() => setMenuOpen(false)}
               />

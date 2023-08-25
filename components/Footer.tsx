@@ -17,10 +17,10 @@ const Footer = () => (
     <div className="flex max-md:flex-col flex-wrap justify-between md:gap-20 gap-16 sm:px-16 px-6 py-10 max-w-[1440px] mx-auto">
       <div className="flex flex-col justify-start items-start gap-6">
         <Image
-          src="/2.png"
+          src="/surgetech.png"
           alt="logo"
-          width={118}
-          height={18}
+          width={150}
+          height={24}
           className="object-contain"
         />
         <p className="object-base text-white-600">

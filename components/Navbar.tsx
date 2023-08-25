@@ -28,10 +28,10 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-full sm:px-16 px-6 w-full">
           <Link href="/" className="flex justify-center items-center">
             <Image
-              src="/2.png"
+              src="/surgetech.png"
               alt="logo"
-              width={118}
-              height={18}
+              width={150}
+              height={24}
               className="object-contain"
             />
           </Link>

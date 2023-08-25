@@ -5,10 +5,13 @@ import CustomButton from "./CustomButton";
 import { FiSearch } from "react-icons/fi";
 import SplitType from "split-type";
 import { gsap } from "gsap";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the CSS file for AOS styles
 
 const Hero = () => {
   const handleScroll = () => {};
   useEffect(() => {
+    AOS.init();
     // Initialize SplitType and manipulate element classes
     let text = new SplitType("#text");
     let characters = document.querySelectorAll(".char");
@@ -28,13 +31,23 @@ const Hero = () => {
       <div className="flex-col  pt-40 justify-center self-center">
         <h1
           id="text"
-          className="xl:text-5xl md:text-5xl text-[28px] font-black self-center text-center text-black-100 ease-in-out duration-500 slide-in-from-top"
+          className="xl:text-5xl md:text-5xl text-[28px] font-black self-center text-center max-w-[1000px] text-black-100 ease-in-out duration-500 slide-in-from-top"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1500"
+          data-aos-delay="250"
         >
           A pioneering force dedicated solely to empowering tech startups across
           Africa
         </h1>
 
-        <p className="hero__subtitle text-center">
+        <p
+          className="hero__subtitle text-center"
+          data-aos="fade-up"
+          data-aos-once="true"
+          data-aos-duration="1500"
+          data-aos-delay="250"
+        >
           Access curated investments in tech startups accross africa
         </p>
 
@@ -43,6 +56,10 @@ const Hero = () => {
             type="text"
             placeholder="Enter your email..."
             className="px-4 py-2 border border-gray-300 rounded-md bg-transparent hidden md:block xl:block"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="250"
           />
           <CustomButton
             title="Get started"

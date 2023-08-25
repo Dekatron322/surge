@@ -32,10 +32,6 @@ const Hero = () => {
         <h1
           id="text"
           className="xl:text-5xl md:text-5xl text-[28px] font-black self-center text-center max-w-[1000px] text-black-100 ease-in-out duration-500 slide-in-from-top"
-          data-aos="fade-up"
-          data-aos-once="true"
-          data-aos-duration="1500"
-          data-aos-delay="250"
         >
           A pioneering force dedicated solely to empowering tech startups across
           Africa
@@ -46,7 +42,7 @@ const Hero = () => {
           data-aos="fade-up"
           data-aos-once="true"
           data-aos-duration="1500"
-          data-aos-delay="250"
+          data-aos-delay="1500"
         >
           Access curated investments in tech startups accross africa
         </p>

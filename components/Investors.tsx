@@ -1,10 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import { BsPlayCircle } from "react-icons/bs";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import the CSS file for AOS styles
 
 import { CustomButton } from ".";
+import { useEffect } from "react";
 const Investors = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   const handleScroll = () => {
     const nextSection = document.getElementById("discover");
 
@@ -20,8 +24,22 @@ const Investors = () => {
     >
       <div className="mt-10 padding-x flex xl:flex-col flex-col relative z-0 ">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-gray-400 text-xl pb-5">For Investors</p>
-          <h2 className="text-black-100 xl:text-5xl md:text-5xl text-[28px] font-black text-center">
+          <p
+            className="text-gray-400 text-xl pb-5"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="750"
+          >
+            For Investors
+          </p>
+          <h2
+            className="text-black-100 xl:text-5xl md:text-5xl text-[28px] font-black text-center"
+            data-aos="fade-down"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="500"
+          >
             Simple, transparent, <br />
             and accessible
           </h2>
@@ -30,6 +48,10 @@ const Investors = () => {
           <div
             className="bg-[#422f45] rounded-md p-6"
             style={{ flex: 1, height: "100%" }}
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="250"
           >
             <h5 className="text-black-100 text-2xl pb-5 b">
               1. Find companies
@@ -43,6 +65,10 @@ const Investors = () => {
           <div
             className="bg-[#422f45] rounded-md p-6"
             style={{ flex: 1, height: "100%" }}
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="500"
           >
             <h5 className="text-black-100 text-2xl pb-5 b">
               2. Invest on your terms
@@ -56,6 +82,10 @@ const Investors = () => {
           <div
             className="bg-[#422f45] rounded-md p-6"
             style={{ flex: 1, height: "100%" }}
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="750"
           >
             <h5 className="text-black-100 text-2xl pb-5 b">
               3. Build and diversify your portfolio

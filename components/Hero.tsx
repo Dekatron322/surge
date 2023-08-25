@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="flex-col pt-40 padding-x justify-center self-center">
         <h1
           id="text"
-          className="xl:text-5xl md:text-5xl text-[28px] font-black self-center text-center text-black-100 ease-in-out duration-500 slide-in-from-top max-w-[1000px] px-20"
+          className="xl:text-5xl md:text-5xl text-[28px] font-black self-center text-center text-black-100 ease-in-out duration-500 slide-in-from-top px-20"
         >
           A pioneering force dedicated solely to empowering tech startups across
           Africa

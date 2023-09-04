@@ -65,7 +65,7 @@ const Hero = () => {
         </div>
         <small className="text-xs flex text-gray-400 pt-4 text-center justify-center">
           Private investments are highly risky, illiquid and may result in total
-          loss of capital. Learn more
+          loss of capital.
         </small>
       </div>
     </div>

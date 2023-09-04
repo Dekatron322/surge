@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CustomButton } from "..";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { team, testimonials, partners } from "@/contants";
 
 const AboutContent = () => {
   useEffect(() => {
@@ -29,12 +30,12 @@ const AboutContent = () => {
             data-aos-duration="1500"
             data-aos-delay="300"
           >
-            Most SMEs cannot afford the cost of comprehensive marketing to
-            increase brand awareness, audience, and sales due to the rising cost
-            of doing business. Building and maintaining a website to assist with
-            business operations is now either too expensive or not sustainable.
-            Importantly, lacking a digital identity and presence is detrimental
-            to conducting business in the modern day.
+            At TheSurge.tech, we are passionate advocates for Africa's tech
+            startups, driven by a collective belief in the transformative power
+            of innovation. Founded by a team of seasoned professionals with
+            extensive experience in technology, business development, and
+            venture capital, we are dedicated to bridging the gap between
+            promising tech startups and the resources they need to succeed.
           </p>
 
           <p
@@ -44,10 +45,12 @@ const AboutContent = () => {
             data-aos-duration="1500"
             data-aos-delay="400"
           >
-            In order to provide comprehensive digital marketing solutions to
-            SMEs for the aim of simply and artistically interacting with a
-            larger audience, ultimately for business growth, the Purple Pages
-            concept was established with a creative, problem-solving objective.
+            Our commitment to nurturing innovation and fostering a collaborative
+            ecosystem sets us apart. We understand the unique challenges faced
+            by tech startups and are relentless in our pursuit of solutions. As
+            a forward-thinking and impact-driven company, we strive to build
+            lasting connections, facilitate partnerships, and empower startups
+            with the support they need to scale their ventures.
           </p>
 
           <p
@@ -57,8 +60,10 @@ const AboutContent = () => {
             data-aos-duration="1500"
             data-aos-delay="500"
           >
-            Purple Pages is, to put it simply, a one-stop shop for SMEs' digital
-            marketing needs.
+            From investor outreach and strategic business partnerships to
+            financial modeling, technical support, and digital marketing
+            strategies, we offer a comprehensive suite of services tailored
+            exclusively for tech startups.
           </p>
           <p
             className="xl:pt-10 pt-4 pb-4 text-lg text-black-100"
@@ -67,12 +72,13 @@ const AboutContent = () => {
             data-aos-duration="1500"
             data-aos-delay="600"
           >
-            Most SMEs cannot afford the cost of comprehensive marketing to
-            increase brand awareness, audience, and sales due to the rising cost
-            of doing business. Building and maintaining a website to assist with
-            business operations is now either too expensive or not sustainable.
-            Importantly, lacking a digital identity and presence is detrimental
-            to conducting business in the modern day.
+            Our dedication to impact measurement and reporting ensures that
+            startups can communicate their social contributions effectively,
+            attracting like-minded partners and investors aligned with their
+            vision. Join us at TheSurge.tech as we embark on this transformative
+            journey, igniting innovation in tech startups, and powering progress
+            across Africa. Together, let's propel the future of tech innovation
+            on the continent.
           </p>
         </div>
         <Image
@@ -108,136 +114,33 @@ const AboutContent = () => {
             data-aos-duration="1500"
             data-aos-delay="500"
           >
-            Republic curates private investing opportunities with high-growth
-            potential <br /> across startups, gaming, real estate, and crypto.
+            Surge curates private investing opportunities with high-growth
+            <br />
+            potential across startups in Tech.
           </p>
         </div>
         <div className="pt-10  flex gap-6 marquee-container flex-nowrap mb-20">
-          <div
-            className="border border-chatgpt-100 rounded-md p-6 marquee-content"
-            style={{ height: "100%", width: "500px" }}
-          >
-            <p className="text-black-100 text-md">
-              Search and filter by sectors, highlights, top deals and more. Want
-              to support climate-tech or Black founders? Set your preferences to
-              be notified when those deals launch.
-            </p>
-            <div className="pt-10 flex gap-5 items-center">
-              <Image
-                height={100}
-                width={100}
-                src="/AboutProperty.jpg"
-                alt="hero"
-                className="about__img-obj object-cover rounded-full"
-              />
-              <div>
-                <h6 className="text-black-100 text-xl pb-2">Benedict Omodia</h6>
-                <p className="text-black-100">
-                  Chief Operation Officer, Mkobo Microfinance Bank
-                </p>
+          {testimonials.map((item) => (
+            <div
+              className="border border-chatgpt-100 rounded-md p-6 marquee-content"
+              style={{ height: "100%", width: "500px" }}
+            >
+              <p className="text-black-100 text-md">{item.review}</p>
+              <div className="pt-10 flex gap-5 items-center">
+                <Image
+                  height={100}
+                  width={100}
+                  src={item.profile}
+                  alt="hero"
+                  className="about__img-obj object-cover rounded-full"
+                />
+                <div>
+                  <h6 className="text-black-100 text-xl pb-2">{item.name}</h6>
+                  <p className="text-black-100">{item.position}</p>
+                </div>
               </div>
             </div>
-          </div>
-          <div
-            className="border border-chatgpt-100 rounded-md p-6 marquee-content"
-            style={{ height: "100%", width: "500px" }}
-          >
-            <p className="text-black-100 text-md">
-              Search and filter by sectors, highlights, top deals and more. Want
-              to support climate-tech or Black founders? Set your preferences to
-              be notified when those deals launch.
-            </p>
-            <div className="pt-10 flex gap-5 items-center">
-              <Image
-                height={100}
-                width={100}
-                src="/AboutProperty.jpg"
-                alt="hero"
-                className="about__img-obj object-cover rounded-full"
-              />
-              <div>
-                <h6 className="text-black-100 text-xl pb-2">Benedict Omodia</h6>
-                <p className="text-black-100">
-                  Chief Operation Officer, Mkobo Microfinance Bank
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="border border-chatgpt-100 rounded-md p-6 marquee-content"
-            style={{ height: "100%", width: "500px" }}
-          >
-            <p className="text-black-100 text-md">
-              Search and filter by sectors, highlights, top deals and more. Want
-              to support climate-tech or Black founders? Set your preferences to
-              be notified when those deals launch.
-            </p>
-            <div className="pt-10 flex gap-5 items-center">
-              <Image
-                height={100}
-                width={100}
-                src="/AboutProperty.jpg"
-                alt="hero"
-                className="about__img-obj object-cover rounded-full"
-              />
-              <div>
-                <h6 className="text-black-100 text-xl pb-2">Benedict Omodia</h6>
-                <p className="text-black-100">
-                  Chief Operation Officer, Mkobo Microfinance Bank
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="border border-chatgpt-100 rounded-md p-6 marquee-content"
-            style={{ height: "100%", width: "500px" }}
-          >
-            <p className="text-black-100 text-md">
-              Search and filter by sectors, highlights, top deals and more. Want
-              to support climate-tech or Black founders? Set your preferences to
-              be notified when those deals launch.
-            </p>
-            <div className="pt-10 flex gap-5 items-center">
-              <Image
-                height={100}
-                width={100}
-                src="/AboutProperty.jpg"
-                alt="hero"
-                className="about__img-obj object-cover rounded-full"
-              />
-              <div>
-                <h6 className="text-black-100 text-xl pb-2">Benedict Omodia</h6>
-                <p className="text-black-100">
-                  Chief Operation Officer, Mkobo Microfinance Bank
-                </p>
-              </div>
-            </div>
-          </div>
-          <div
-            className="border border-chatgpt-100 rounded-md p-6 marquee-content"
-            style={{ height: "100%", width: "500px" }}
-          >
-            <p className="text-black-100 text-md">
-              Search and filter by sectors, highlights, top deals and more. Want
-              to support climate-tech or Black founders? Set your preferences to
-              be notified when those deals launch.
-            </p>
-            <div className="pt-10 flex gap-5 items-center">
-              <Image
-                height={100}
-                width={100}
-                src="/AboutProperty.jpg"
-                alt="hero"
-                className="about__img-obj object-cover rounded-full"
-              />
-              <div>
-                <h6 className="text-black-100 text-xl pb-2">Benedict Omodia</h6>
-                <p className="text-black-100">
-                  Chief Operation Officer, Mkobo Microfinance Bank
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
         <div
           className="relative flex flex-col max-w-[1300px] mx-auto bg-[#422f45] rounded-2xl h-[400px] items-center overflow-hidden"
@@ -274,39 +177,24 @@ const AboutContent = () => {
         >
           <h2 className="text-black-100 text-xl xl:text-3xl md:text-3xl px-6 text-center">
             The best venture capital firms, family offices, and high net worth
-            individuals already invest in Republic companies.
+            individuals already invest in Surge companies.
           </h2>
         </div>
-        <div className="pt-10 flex gap-5 items-center justify-center max-w-[1300px] mx-auto">
-          <Image
-            src="/1.29fa28b6.webp"
-            alt="logo"
-            width={250}
-            height={38}
-            className="object-contain"
-          />
-          <Image
-            src="/2.6c23e285.webp"
-            alt="logo"
-            width={250}
-            height={38}
-            className="object-contain"
-          />
-          <Image
-            src="/3.527c6779.webp"
-            alt="logo"
-            width={250}
-            height={38}
-            className="object-contain"
-          />
-          <Image
-            src="/8.f6e79674.webp"
-            alt="logo"
-            width={250}
-            height={38}
-            className="object-contain"
-          />
+
+        <div className="pt-10 flex gap-5 marquee-container items-center justify-center max-w-[1300px] mx-auto">
+          <div className="marquee-content flex">
+            {partners.map((item) => (
+              <Image
+                src={item.image}
+                alt="logo"
+                width={250}
+                height={38}
+                className="object-contain"
+              />
+            ))}
+          </div>
         </div>
+
         <div
           className="max-w-[1300px] mx-auto mt-10"
           style={{ borderTop: "1px solid rgba(243, 243, 243, 0.2)" }}
@@ -328,97 +216,35 @@ const AboutContent = () => {
               data-aos-duration="1500"
               data-aos-delay="500"
             >
-              Republic was founded by alumni from AngelList, the largest online
+              Surge was founded by alumni from AngelList, the largest online
               platform for private investing. Since then, we have built a team
               and a network of the top people from the startup, venture capital,
               and investment worlds.
             </p>
           </div>
           <div className="pt-10 flex xl:flex-row md:flex-row flex-col gap-5 xl:justify-between md:justify-between justify-center items-center max-w-[1200px] mx-auto mb-20">
-            <div
-              className="flex flex-col justify-center items-center max-w-[250px]"
-              data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-duration="1500"
-              data-aos-delay="250"
-            >
-              <Image
-                src="/team1.jpg"
-                alt="logo"
-                width={250}
-                height={250}
-                className="about__img-objx object-cover rounded-full"
-              />
-              <h5 className="pt-2 text-black-100">Ibrahim Muritala</h5>
-              <small className="pt-2 text-black-100">Tech</small>
-              <p className="pt-2 text-black-100 text-center">
-                Senior Engineering Manager. Founder & CEO at Hoodies company.
-                Co-founder of Checky, a health startup.
-              </p>
-            </div>
-            <div
-              className="flex flex-col justify-center items-center max-w-[250px]"
-              data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-duration="1500"
-              data-aos-delay="500"
-            >
-              <Image
-                src="/team0.jpg"
-                alt="logo"
-                width={250}
-                height={250}
-                className="about__img-objx object-cover rounded-full"
-              />
-              <h5 className="pt-2 text-black-100">Ibrahim Muritala</h5>
-              <small className="pt-2 text-black-100">Tech</small>
-              <p className="pt-2 text-black-100 text-center">
-                Senior Engineering Manager. Founder & CEO at Hoodies company.
-                Co-founder of Checky, a health startup.
-              </p>
-            </div>
-            <div
-              className="flex flex-col justify-center items-center max-w-[250px]"
-              data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-duration="1500"
-              data-aos-delay="750"
-            >
-              <Image
-                src="/team2.jpg"
-                alt="logo"
-                width={250}
-                height={250}
-                className="about__img-objx object-cover rounded-full"
-              />
-              <h5 className="pt-2 text-black-100">Ibrahim Muritala</h5>
-              <small className="pt-2 text-black-100">Marketing</small>
-              <p className="pt-2 text-black-100 text-center">
-                Senior Engineering Manager. Founder & CEO at Hoodies company.
-                Co-founder of Checky, a health startup.
-              </p>
-            </div>
-            <div
-              className="flex flex-col justify-center items-center max-w-[250px]"
-              data-aos="fade-right"
-              data-aos-once="true"
-              data-aos-duration="1500"
-              data-aos-delay="1000"
-            >
-              <Image
-                src="/team3.jpg"
-                alt="logo"
-                width={250}
-                height={250}
-                className="about__img-objx object-cover rounded-full"
-              />
-              <h5 className="pt-2 text-black-100">Ibrahim Muritala</h5>
-              <small className="pt-2 text-black-100">Marketing</small>
-              <p className="pt-2 text-black-100 text-center">
-                Senior Engineering Manager. Founder & CEO at Hoodies company.
-                Co-founder of Checky, a health startup.
-              </p>
-            </div>
+            {team.map((item) => (
+              <div
+                className="flex flex-col justify-center items-center max-w-[250px]"
+                data-aos="fade-right"
+                data-aos-once="true"
+                data-aos-duration="1500"
+                data-aos-delay="250"
+              >
+                <Image
+                  src={item.profile}
+                  alt="logo"
+                  width={250}
+                  height={250}
+                  className="about__img-objx object-cover rounded-full"
+                />
+                <h5 className="pt-2 text-black-100">{item.name}</h5>
+                <small className="pt-2 text-black-100">{item.department}</small>
+                <p className="pt-2 text-black-100 text-center">
+                  {item.position}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

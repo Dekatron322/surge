@@ -140,9 +140,9 @@ const ContactUs = () => {
             </h2>
             <p className="pt-4 pb-4 text-lg text-black-100 max-w-[1000px]">
               If you have general questions regarding investing in startups on
-              Republic. Please note: questions relating to specific startups
-              listed on Republic should be directed to startup founders
-              directly, via the discussion section on the startup’s page.
+              Surge. Please note: questions relating to specific startups listed
+              on Surge should be directed to startup founders directly, via the
+              discussion section on the startup’s page.
             </p>
             <CustomButton
               title="Investor Contact"
@@ -159,8 +159,8 @@ const ContactUs = () => {
             </h2>
             <p className="pt-4 pb-4 text-lg text-black-100 max-w-[1000px]">
               If you have questions regarding your company eligibility, the
-              process of creating and publishing your offering on Republic,
-              preparing or filing Form C:
+              process of creating and publishing your offering on Surge,
+              preparing or filing Form S:
             </p>
             <CustomButton
               title="Issuer Contact"
@@ -172,7 +172,7 @@ const ContactUs = () => {
           <div className="mb-20 px-4 md:px-0 xl:px-0">
             <h2 className="text-black-100 text-3xl font-bold ">General</h2>
             <p className="pt-4 pb-4 text-lg text-black-100 max-w-[1000px]">
-              If you have any other enquiry about Republic:
+              If you have any other enquiry about Surge:
             </p>
             <CustomButton
               title="Issuer Contact"

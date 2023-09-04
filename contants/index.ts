@@ -70,14 +70,171 @@ export const fuels = [
   },
 ];
 
+export const partners = [
+  {
+    image: "/../public/1.29fa28b6.webp",
+  },
+  {
+    image: "/../public/2.6c23e285.webp",
+  },
+  {
+    image: "/../public/3.527c6779.webp",
+  },
+  {
+    image: "/../public/8.f6e79674.webp",
+  },
+  {
+    image: "/../public/1.29fa28b6.webp",
+  },
+  {
+    image: "/../public/2.6c23e285.webp",
+  },
+  {
+    image: "/../public/3.527c6779.webp",
+  },
+  {
+    image: "/../public/8.f6e79674.webp",
+  },
+  {
+    image: "/../public/1.29fa28b6.webp",
+  },
+  {
+    image: "/../public/2.6c23e285.webp",
+  },
+  {
+    image: "/../public/3.527c6779.webp",
+  },
+  {
+    image: "/../public/8.f6e79674.webp",
+  },
+];
+
+export const team = [
+  {
+    profile: "/../public/team0.jpg",
+    name: "Ibrahim Muritala",
+    department: "Tech",
+    position:
+      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+  },
+  {
+    profile: "/../public/team1.jpg",
+    name: "Odiaga Raymond",
+    department: "Tech",
+    position:
+      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+  },
+  {
+    profile: "/../public/team4.jpeg",
+    name: "Bamidele Rapheal",
+    department: "Marketting",
+    position:
+      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+  },
+  {
+    profile: "/../public/team3.jpg",
+    name: "Lekan Dairo",
+    department: "Marketting",
+    position:
+      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+  },
+];
+
+export const testimonials = [
+  {
+    profile: "/../public/team0.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team1.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team2.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team0.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team1.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team2.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team0.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team1.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team2.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team0.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team1.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+  {
+    profile: "/../public/team2.jpg",
+    name: "Benedict Omodia",
+    review:
+      "Search and filter by sectors, highlights, top deals and more. Want to support climate-tech or Black founders? Set your preferences to be notified when those deals launch.",
+    position: "Chief Operation Officer, Mkobo Microfinance Bank",
+  },
+];
+
 export const footerLinks = [
   {
     title: "For Investors",
     links: [
       { title: "How it works", url: "/" },
       { title: "Why Invest", url: "/" },
-      { title: "FAQ", url: "/" },
-      { title: "Privacy Policy", url: "/" },
+      { title: "Terms of Service", url: "/terms" },
+      { title: "Privacy Policy", url: "/privacy" },
     ],
   },
   {
@@ -94,8 +251,8 @@ export const footerLinks = [
     links: [
       { title: "Events", url: "/" },
       { title: "Blog", url: "/" },
-      { title: "Contact", url: "/" },
-      { title: "About Us", url: "/" },
+      { title: "Contact", url: "/contact" },
+      { title: "About Us", url: "/about" },
     ],
   },
   {

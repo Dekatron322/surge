@@ -74,7 +74,13 @@ const Founder = () => {
             data-aos-duration="1500"
             data-aos-delay="1000"
           />
-          <div className="absolute inset-0 flex items-center justify-center">
+          <div
+            className="absolute inset-0 flex items-center justify-center"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+            data-aos-delay="1000"
+          >
             <BsPlayCircle
               className="w-16 h-16 secondary-orange"
               style={{ color: "#1C0F1F" }}

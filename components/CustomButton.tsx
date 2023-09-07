@@ -21,9 +21,7 @@ const CustomButton = ({
         disabled={false}
         type={btnType || "button"}
         className={`custom-btn ${containerStyles}`}
-        onClick={() => {
-          handleClick;
-        }}
+        onClick={handleClick}
         data-aos="fade-up"
         data-aos-once="true"
         data-aos-duration="1500"

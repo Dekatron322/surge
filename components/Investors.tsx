@@ -4,7 +4,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS file for AOS styles
 
 import { CustomButton } from ".";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import SubscribeModal from "./SubscribeModal";
 const Investors = () => {
   useEffect(() => {
     AOS.init();
@@ -16,6 +17,7 @@ const Investors = () => {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
@@ -102,9 +104,10 @@ const Investors = () => {
         <CustomButton
           title="Get Started"
           containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
-          handleClick={handleScroll}
+          handleClick={() => setIsOpen(true)}
         />
       </div>
+      <SubscribeModal isOpen={isOpen} closeModal={() => setIsOpen(false)} />
     </div>
   );
 };

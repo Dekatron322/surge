@@ -27,13 +27,19 @@ const Footer = () => (
           TheSurge.tech - Igniting <br /> Innovation in Tech Startups
         </p>
         <div className="flex items-center gap-5">
-          <a href="https://facebook.com">
+          <a
+            href="https://x.com/thesurgetech?s=11&t=E5TjXTKMkglILrH7PNnVAQ"
+            target="_blank"
+          >
             <FaTwitterSquare className="text-white hover:text-[#9b7d9e] ease-in-out duration-500 text-2xl" />
           </a>
-          <a href="https://facebook.com">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/posts/the-surge-tech_surge-linkedin-activity-7105477137255575552-rz3f?utm_source=share&utm_medium=member_ios"
+          >
             <BsLinkedin className="text-white hover:text-[#9b7d9e] ease-in-out duration-500 text-2xl" />
           </a>
-          <a href="https://facebook.com">
+          <a href="https://facebook.com" target="_blank">
             <SiDiscord className="text-white hover:text-[#9b7d9e] ease-in-out duration-500 text-2xl" />
           </a>
         </div>

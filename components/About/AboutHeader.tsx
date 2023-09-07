@@ -1,10 +1,11 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import CustomButton from "../CustomButton";
 import { FiSearch } from "react-icons/fi";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SubscribeModal from "../SubscribeModal";
 
 const AboutHeader = () => {
   const handleScroll = () => {
@@ -14,6 +15,8 @@ const AboutHeader = () => {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <header className="about flex-col justify-center self-center items-center">
@@ -51,12 +54,13 @@ const AboutHeader = () => {
               <CustomButton
                 title="Get started"
                 containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
-                handleClick={handleScroll}
+                handleClick={() => setIsOpen(true)}
               />
             </div>
           </div>
         </div>
       </div>
+      <SubscribeModal isOpen={isOpen} closeModal={() => setIsOpen(false)} />
     </header>
   );
 };

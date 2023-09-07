@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import CustomButton from "./CustomButton";
 import { FiSearch } from "react-icons/fi";
@@ -7,6 +7,7 @@ import SplitType from "split-type";
 import { gsap } from "gsap";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import the CSS file for AOS styles
+import SubscribeModal from "./SubscribeModal";
 
 const Hero = () => {
   const handleScroll = () => {};
@@ -25,6 +26,7 @@ const Hero = () => {
       duration: 0.5,
     });
   }, []);
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="hero flex-col padding-x justify-center self-center items-center">
@@ -60,7 +62,7 @@ const Hero = () => {
           <CustomButton
             title="Get started"
             containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
-            handleClick={handleScroll}
+            handleClick={() => setIsOpen(true)}
           />
         </div>
         <small className="text-xs flex text-gray-400 pt-4 text-center justify-center">
@@ -68,6 +70,7 @@ const Hero = () => {
           loss of capital.
         </small>
       </div>
+      <SubscribeModal isOpen={isOpen} closeModal={() => setIsOpen(false)} />
     </div>
   );
 };

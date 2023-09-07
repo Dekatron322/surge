@@ -7,6 +7,7 @@ import { CustomButton } from ".";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SubscribeModal from "./SubscribeModal";
 const Founder = () => {
   const [animate, setAnimate] = useState(false); // State to control animation
 
@@ -32,6 +33,7 @@ const Founder = () => {
       nextSection.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="mt-10 padding-x justify-between  flex xl:flex-row flex-col gap-x-40 relative z-0 max-w-[1300px] mx-auto">
@@ -60,7 +62,7 @@ const Founder = () => {
         <CustomButton
           title="Raise Capital"
           containerStyles="bg-primary-blue hover:bg-[#422f45] ease-in-out duration-500 text-white rounded-md xl:mt-10 md:mt-10 mt-4"
-          handleClick={handleScroll}
+          handleClick={() => setIsOpen(true)}
         />
         <div className="mt-10 relative">
           <Image
@@ -166,6 +168,7 @@ const Founder = () => {
           </p>
         </div>
       </div>
+      <SubscribeModal isOpen={isOpen} closeModal={() => setIsOpen(false)} />
     </div>
   );
 };

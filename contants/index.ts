@@ -113,30 +113,26 @@ export const team = [
   {
     profile: "/../public/team0.jpg",
     name: "Ibrahim Muritala",
-    department: "Tech",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    department: "Co-Founder",
+    position: "",
   },
   {
     profile: "/../public/team1.jpg",
     name: "Odiaga Raymond",
-    department: "Tech",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    department: "Co-Founder",
+    position: "",
   },
   {
     profile: "/../public/team4.jpeg",
     name: "Bamidele Rapheal",
-    department: "Marketting",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    department: "Chief Operating Officer",
+    position: "",
   },
   {
     profile: "/../public/team3.jpg",
     name: "Lekan Dairo",
-    department: "Marketting",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    department: "Head, Media and marketing",
+    position: "",
   },
 ];
 

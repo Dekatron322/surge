@@ -82,56 +82,6 @@ const Terms = () => {
               <MdForward className="text-primary-blue text-xl" />
             ) : null}
           </div>
-          <div
-            className="pt-6"
-            style={{ borderBottom: "1px solid rgba(243, 243, 243, 0.1)" }}
-          ></div>
-
-          <div
-            className="flex gap-4 items-center mt-6 "
-            onClick={() => setActiveSection("market")}
-            onMouseEnter={() => setHoveredSection("market")} // Set the hover state
-            onMouseLeave={() => setHoveredSection(null)} // Reset the hover state
-          >
-            <a
-              href="market"
-              className={`text-black-100 text-xl transition ease-in-out delay-150 ${
-                hoveredSection === "market"
-                  ? "hover:text-primary-blue cursor-pointer"
-                  : ""
-              }`}
-            >
-              Secondary Market Terms
-            </a>
-            {activeSection === "market" || hoveredSection === "market" ? (
-              <MdForward className="text-primary-blue text-xl" />
-            ) : null}
-          </div>
-          <div
-            className="pt-6"
-            style={{ borderBottom: "1px solid rgba(243, 243, 243, 0.1)" }}
-          ></div>
-
-          <div
-            className="flex gap-4 items-center mt-6 "
-            onClick={() => setActiveSection("cookie")}
-            onMouseEnter={() => setHoveredSection("cookie")} // Set the hover state
-            onMouseLeave={() => setHoveredSection(null)} // Reset the hover state
-          >
-            <a
-              href="cookie"
-              className={`text-black-100 text-xl transition ease-in-out delay-150 ${
-                hoveredSection === "cookie"
-                  ? "hover:text-primary-blue cursor-pointer"
-                  : ""
-              }`}
-            >
-              Cookie Disclosure
-            </a>
-            {activeSection === "cookie" || hoveredSection === "cookie" ? (
-              <MdForward className="text-primary-blue text-xl" />
-            ) : null}
-          </div>
         </div>
         <div className="flex flex-col">
           <div className="mb-14 pb-6 px-4 md:px-0 xl:px-0">

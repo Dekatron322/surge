@@ -199,7 +199,7 @@ const AboutContent = () => {
           className="max-w-[1300px] mx-auto mt-10"
           style={{ borderTop: "1px solid rgba(243, 243, 243, 0.2)" }}
         >
-          <div className="flex max-w-[800px] pt-10 items-center mx-auto flex-col">
+          <div className="flex max-w-[700px] pt-10 items-center mx-auto flex-col">
             <h2
               className="text-black-100 md:text-3xl text-2xl font-extrabold px-6 text-center"
               data-aos="fade-down"
@@ -236,7 +236,7 @@ const AboutContent = () => {
                   alt="logo"
                   width={250}
                   height={250}
-                  className="about__img-objx object-cover rounded-full"
+                  className="about__img-objx object-cover rounded"
                 />
                 <h5 className="pt-2 text-black-100">{item.name}</h5>
                 <small className="pt-2 text-black-100">{item.department}</small>

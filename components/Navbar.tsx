@@ -6,6 +6,7 @@ import Image from "next/image";
 import { BsLinkedin, BsList, BsX } from "react-icons/bs";
 import { FaTwitterSquare } from "react-icons/fa";
 import { SiDiscord } from "react-icons/si";
+import SubscribeModal from "./SubscribeModal";
 
 const styles = {
   navLinks:
@@ -16,6 +17,7 @@ const styles = {
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen(!menuOpen);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header
       className={`w-full  z-10 ${styles.fixedHeader}`}
@@ -44,7 +46,10 @@ const Navbar = () => {
               <li className={styles.navLinks}>
                 <Link href="/contact">Contact Us</Link>
               </li>
-              <li className="flex items-center space-x-5 text-white ml-10 border border-white px-4 py-1 rounded-md hover:bg-primary-blue hover:text-white ease-in-out duration-500">
+              <li
+                onClick={() => setIsOpen(true)}
+                className="flex items-center space-x-5 text-white ml-10 border border-white px-4 py-1 rounded-md hover:bg-primary-blue hover:text-white ease-in-out duration-500"
+              >
                 <Link href="">Sign In</Link>
               </li>
             </ul>
@@ -98,7 +103,10 @@ const Navbar = () => {
                   onClick={() => setMenuOpen(false)}
                   className="flex items-center text-[#857e75] py-4"
                 >
-                  <p className="border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition ease-in-out delay-300">
+                  <p
+                    onClick={() => setIsOpen(true)}
+                    className="border border-white px-4 py-1 rounded-md hover:bg-white hover:text-black transition ease-in-out delay-300"
+                  >
                     Sign In
                   </p>
                 </li>
@@ -128,6 +136,7 @@ const Navbar = () => {
           </div>
         </div>
       </nav>
+      <SubscribeModal isOpen={isOpen} closeModal={() => setIsOpen(false)} />
     </header>
   );
 };

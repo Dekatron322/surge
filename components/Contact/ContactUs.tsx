@@ -94,11 +94,13 @@ const ContactUs = () => {
               on Surge should be directed to startup founders directly, via the
               discussion section on the startup’s page.
             </p>
-            <CustomButton
-              title="Investor Contact"
-              containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
-              handleClick={handleScroll}
-            />
+            <a href="mailto:investors@thesurge.tech">
+              <CustomButton
+                title="Investor Contact"
+                containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
+                handleClick={handleScroll}
+              />
+            </a>
           </div>
           <div
             className="mb-14 pb-6 px-4 md:px-0 xl:px-0"
@@ -112,11 +114,13 @@ const ContactUs = () => {
               process of creating and publishing your offering on Surge,
               preparing or filing Form S:
             </p>
-            <CustomButton
-              title="Issuer Contact"
-              containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
-              handleClick={handleScroll}
-            />
+            <a href="mailto:issuers@thesurge.tech">
+              <CustomButton
+                title="Issuer Contact"
+                containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
+                handleClick={handleScroll}
+              />
+            </a>
           </div>
 
           <div className="mb-20 px-4 md:px-0 xl:px-0">
@@ -124,11 +128,13 @@ const ContactUs = () => {
             <p className="pt-4 pb-4 text-lg text-black-100 max-w-[1000px]">
               If you have any other enquiry about Surge:
             </p>
-            <CustomButton
-              title="Issuer Contact"
-              containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
-              handleClick={handleScroll}
-            />
+            <a href="mailto:support@thesurge.tech">
+              <CustomButton
+                title="All Enquiries"
+                containerStyles="bg-primary-blue text-white rounded-md hover:bg-[#422f45] ease-in-out duration-500"
+                handleClick={handleScroll}
+              />
+            </a>
           </div>
         </div>
       </div>

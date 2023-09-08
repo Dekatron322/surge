@@ -11,11 +11,11 @@ const AboutContent = () => {
     AOS.init();
   }, []);
   return (
-    <div className=" mt-10 ">
+    <div className="mt-10">
       <div className="max-w-[1300px] mx-auto justify-between flex xl:flex-row flex-col gap-x-20 px-6 relative z-0">
         <div>
           <h2
-            className="text-black-100 xl:text-5xl md:text-5xl text-[32px] font-black"
+            className="text-black-100 xl:text-5xl md:text-5xl text-[32px]  font-black"
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-duration="1500"
@@ -24,7 +24,7 @@ const AboutContent = () => {
             What We Do
           </h2>
           <p
-            className="xl:pt-10 pt-4 text-lg text-black-100"
+            className="xl:pt-10 pt-4 md:text-lg text text-black-100"
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-duration="1500"
@@ -39,7 +39,7 @@ const AboutContent = () => {
           </p>
 
           <p
-            className="xl:pt-10 pt-4 text-lg text-black-100"
+            className="xl:pt-10 pt-4 md:text-lg text text-black-100"
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-duration="1500"
@@ -54,7 +54,7 @@ const AboutContent = () => {
           </p>
 
           <p
-            className="xl:pt-10 pt-4 text-lg text-black-100"
+            className="xl:pt-10 pt-4 md:text-lg text text-black-100"
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-duration="1500"
@@ -66,7 +66,7 @@ const AboutContent = () => {
             exclusively for tech startups.
           </p>
           <p
-            className="xl:pt-10 pt-4 pb-4 text-lg text-black-100"
+            className="xl:pt-10 pt-4 pb-4 md:text-lg text text-black-100"
             data-aos="fade-down"
             data-aos-once="true"
             data-aos-duration="1500"

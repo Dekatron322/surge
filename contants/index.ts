@@ -114,29 +114,25 @@ export const team = [
     profile: "/../public/team0.jpg",
     name: "Ibrahim Muritala",
     department: "Co-Founder",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    position: "",
   },
   {
     profile: "/../public/team1.jpg",
     name: "Odiaga Raymond",
     department: "Co-Founder",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    position: "",
   },
   {
     profile: "/../public/team4.jpeg",
     name: "Bamidele Rapheal",
     department: "Chief Operating Officer",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    position: "",
   },
   {
     profile: "/../public/team3.jpg",
     name: "Lekan Dairo",
     department: "Head, Media and marketing",
-    position:
-      "Senior Engineering Manager. Founder & CEO at Hoodies company. Co-founder of Checky, a health startup.",
+    position: "",
   },
 ];
 

@@ -143,7 +143,7 @@ const AboutContent = () => {
           ))}
         </div>
         <div
-          className="relative flex flex-col max-w-[1300px] mx-auto bg-[#422f45] rounded-2xl h-[400px] items-center overflow-hidden"
+          className="relative flex flex-col bg-subscribe bg-cover bg-center max-w-[1300px] mx-auto bg-[#422f45] rounded-2xl h-auto items-center overflow-hidden"
           data-aos="fade-down"
           data-aos-once="true"
           data-aos-duration="1500"
@@ -154,20 +154,19 @@ const AboutContent = () => {
               Subscribe To Our Newsletter
             </h2>
             <p className="text-black-100 max-w-[800px] text-md xl:text-center md:text-center  px-6 pt-4">
-              Apart from a man tripping down the different crypto dips, there's
-              a lot to explore in the Crypto space and we'd love to share that
-              with you. Be it our product update, a new crypto fact, or a random
-              recipe we pasted by accident.
+              Don't miss out on exclusive content, insider updates, and exciting
+              surprises – subscribe now and join our newsletter community!
             </p>
             <div className="flex mt-10 gap-5 justify-center self-center">
               <input
                 type="text"
                 placeholder="Enter your email..."
-                className="px-4 py-2 border xl:w-[600px] w-[300px] border-gray-300 rounded-md bg-transparent"
+                className="px-4 py-2 border xl:w-[600px] w-[300px] border-gray-300 rounded-md bg-transparent mb-20"
               />
             </div>
           </div>
         </div>
+        {/*
         <div
           className="flex max-w-[800px] pt-10 items-center mx-auto flex-col"
           data-aos="fade-up"
@@ -180,7 +179,8 @@ const AboutContent = () => {
             individuals already invest in Surge companies.
           </h2>
         </div>
-
+          */}
+        {/*
         <div className="pt-10 flex gap-5 marquee-container items-center justify-center max-w-[1300px] mx-auto">
           <div className="marquee-content flex">
             {partners.map((item) => (
@@ -194,7 +194,7 @@ const AboutContent = () => {
             ))}
           </div>
         </div>
-
+        */}
         <div
           className="max-w-[1300px] mx-auto mt-10"
           style={{ borderTop: "1px solid rgba(243, 243, 243, 0.2)" }}
@@ -216,10 +216,10 @@ const AboutContent = () => {
               data-aos-duration="1500"
               data-aos-delay="500"
             >
-              Surge was founded by alumni from AngelList, the largest online
-              platform for private investing. Since then, we have built a team
-              and a network of the top people from the startup, venture capital,
-              and investment worlds.
+              Surge was founded by alumni from different sectors, with depths of
+              experience. Since then, we have built a team and a network of the
+              top people from the startup, venture capital, and investment
+              worlds.
             </p>
           </div>
           <div className="pt-10 flex xl:flex-row md:flex-row flex-col gap-5 xl:justify-between md:justify-between justify-center items-center max-w-[1200px] mx-auto mb-20">

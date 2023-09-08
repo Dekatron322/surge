@@ -41,6 +41,7 @@ module.exports = {
       backgroundImage: {
         pattern: "url('/Pattern2.jpg')",
         "hero-bg": "url('/hero-bg.png')",
+        subscribe: "url('/pattern1.png')",
       },
     },
   },
